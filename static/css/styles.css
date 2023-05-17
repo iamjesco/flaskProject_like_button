@@ -1,0 +1,20 @@
+body {
+  background-color: #ccc;
+}
+
+.fa-heart {
+  transition: 0.3s ease-in;
+}
+.fa-heart:hover {
+  transform: scale(1.1);
+}
+
+.heart-zero {
+  color: #000;
+}
+
+.heart-one {
+  color: #f00;
+}
+
+/*# sourceMappingURL=styles.css.map */

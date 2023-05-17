@@ -1,0 +1,14 @@
+{% extends 'index.html' %}
+
+{% block content %}
+	<h1>All Likes: {{ likes }}</h1>
+	{% if user['like'] == 0 %}
+		<a href="{{ url_for('increase_likes') }}">
+			<h2><i class="fa-solid fa-heart heart-zero"></i></h2>
+		</a>
+	{% else %}
+		<a href="{{ url_for('decrease_likes') }}">
+			<h2><i class="fa-solid fa-heart heart-one"></i></h2>
+		</a>
+	{% endif %}
+{% endblock %}
